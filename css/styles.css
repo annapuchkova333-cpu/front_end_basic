@@ -1,17 +1,70 @@
-  <style> 
-  <body style="background-color: #1E1E1E;">
-  <table style="background-color: white; border-bottom: #46A358 solid 10px;"
-    body {text-align: center;}
-        table {border: 2px solid white; 
-            margin: 50px auto;       
-            border-collapse: collapse;}
-            td {padding: 40px;} 
-            div {margin-top: 15px; margin-bottom: 15px;} 
-            #registerButton {background-color: #46A358; width: 300px; height: 45px; border-radius: 5px; color: white; border-color: #46A358;}   
-            button {background-color: white; width: 300px; height: 45px; border-radius: 5px; border: 1px solid black; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 10px;}
-            input {width: 300px; height: 45px; border-radius: 5px; border: 1px solid black; box-sizing: border-box; padding: 10px; font-family: inherit;}
-            #registerTitle {color: #46A358;}
-            .password-wrapper {position:relative ; width: 300px; margin : 0 auto;}
-            .password-wrapper input {width : 100%; padding: 10px; padding-right: 40px; box-sizing: border-box;}
-            .eye-icon {position :absolute ; right: 10px; top: 50%; transform: translateY(-50%); color: #888; font-size: 20px; z-index: 2;}
-    </style>
+body {
+    background-color: #1E1E1E;
+    text-align: center;
+}
+table {
+    background-color: white;
+    border-bottom: 10px solid #46A358;
+    border: 2px solid white;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+td {
+    padding: 40px;
+}
+div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#registerButton {
+    background-color: #46A358;
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+    border-color: #46A358;
+}
+button {
+    background-color: white;
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+input {
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: inherit;
+}
+#registerTitle {
+    color: #46A358;
+}
+.password-wrapper {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+.password-wrapper input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 20px;
+    z-index: 2;
+}
