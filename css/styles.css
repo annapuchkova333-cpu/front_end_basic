@@ -93,11 +93,19 @@ input {
 }
 
 .header-container {
- font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 0;
     padding-top: 30px;
-    padding-bottom: 25px; 
-    border-bottom: 0.5px solid #46A35880; 
+    padding-bottom: 12px; 
+    border-bottom: 0.3px solid #46A35880; 
     width: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px 12px;
+    max-width: 1200px;
+    margin: 0 auto; 
     box-sizing: border-box;
 }
 
@@ -105,8 +113,9 @@ input {
 .header-nav, 
 .header-login {
  display: inline-block;
-    vertical-align: bottom; 
+    vertical-align: middle; 
     font-size: 16px;
+    width: auto;
 }
 
 .header-logo {
@@ -115,6 +124,10 @@ input {
 }
 
 .header-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     width: 60%;
     text-align: center;
 }
@@ -148,22 +161,159 @@ content: "";
     z-index: 10; 
 }
 
+.bottom-block {
+    background-color: #f8f8f8;
+    padding: 40px 0; 
+}
+
+.bottom-block-inner {
+    text-align: center;
+    max-width: 100%;
+}
+
+.bottom-block .container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.bottom-block-content {
+    text-align: left;
+}
+
+.hero {
+    background-color: #F5F5F580;
+    padding: 60px 0;
+    margin: 12px auto 0;
+    width: 1200px;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.hero_content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero_label {
+    font-size: 14px;
+    color: #3D3D3D;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+.hero_title {
+    font-size: 70px;
+    font-weight: 900;
+    color: #3D3D3D;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.hero_title span {
+    color: #46A358;
+    white-space: nowrap;
+}
+
+.hero_text {
+    font-size: 14px;
+    color: #727272;
+    margin-bottom: 44px;
+    line-height: 1.6;
+}
+
+.hero_image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Black.woff') format('woff');
+    font-weight: 900;
+}
+
+body {
+    font-family: 'Cera Pro', sans-serif;
+}
+
 .login-button-green {
+      display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    background-color: #46A358;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center; 
+}
+
+.login-button-green img {
+    width: 20px;
+    height: 20px;
+}
+
+.login-button-green:hover {
+    background-color: #3a8a4a;
+}
+
+.shop-button-green {
     display: inline-block; 
     background-color: #46A358;
     color: white;
     border: none;
     border-radius: 6px;
-    width: 100px;
-    height: 35px;
+    padding: 14px 40px;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center; 
-    line-height: 35px; 
-    padding: 0;
-}
-
-.login-button-green:hover {
-    background-color: #3a8a4a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
