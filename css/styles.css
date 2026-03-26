@@ -1,4 +1,34 @@
-﻿/* REGISTRATION FORM STYLES */
+﻿/* FONTS */
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Black.woff') format('woff');
+    font-weight: 900;
+}
+
+body {
+    font-family: 'Cera Pro', sans-serif;
+}
+
+/* REGISTRATION FORM STYLE */
 
 body {
     background-color: white;
@@ -193,27 +223,23 @@ input::placeholder {
 }
 
 .catalog .container {
-    font-size: 0;
-    text-align: left;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
 }
 
 /*SIDEBAR*/
 
 .catalog-sidebar {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    font-size: 16px;
+    flex: 0 0 20%;
     background-color: #FBFBFB;
     overflow: hidden;
+    text-align: left;
 }
 
 .catalog-main {
-    display: inline-block;
-    vertical-align: top;
-    width: 80%;
-    font-size: 16px;
-    padding-left: 30px;
+    flex: 1;
+    min-width: 0;
 }
 
 .catalog-sidebar-title {
@@ -309,15 +335,13 @@ input::placeholder {
 /*PRODUCT GRID*/
 
 .catalog-grid {
-    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 40px;
 }
 
 .product-card {
-    display: inline-block;
-    vertical-align: top;
-    width: 33.33%;
-    font-size: 16px;
+    flex: 0 0 33.33%;
     padding: 10px 15px;
     box-sizing: border-box;
     text-align: left;
@@ -357,22 +381,22 @@ input::placeholder {
 /*PAGINATION*/
 
 .catalog-pagination {
-    text-align: right;
-    font-size: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
 }
 
 .pagination-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 35px;
     height: 35px;
-    line-height: 35px;
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
     color: #3D3D3D;
     text-decoration: none;
     border: 1px solid #E8E8E8;
-    margin: 0 3px;
     border-radius: 4px;
 }
 
@@ -426,15 +450,13 @@ input::placeholder {
 .header-logo,
 .header-nav,
 .header-login {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
     font-size: 16px;
-    width: auto;
 }
 
 .header-logo {
-    width: 20%;
-    text-align: left;
+    flex-shrink: 0;
 }
 
 .header-nav {
@@ -442,21 +464,19 @@ input::placeholder {
     display: flex;
     justify-content: center;
     gap: 30px;
-    width: 60%;
-    text-align: center;
 }
 
 .header-login {
-    width: 20%;
-    text-align: right;
+    flex-shrink: 0;
+    justify-content: flex-end;
 }
 
 .nav-link {
     text-decoration: none;
     color: #3D3D3D;
-    margin: 0 20px;
     font-weight: 400;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
@@ -475,7 +495,7 @@ input::placeholder {
     z-index: 10;
 }
 
-/*BOTTOM BLOCK*/
+/* BOTTOM BLOCK */
 
 .bottom-block {
     background-color: #f8f8f8;
@@ -568,36 +588,6 @@ input::placeholder {
     object-fit: contain;
 }
 
-/*FONTS*/
-
-@font-face {
-    font-family: 'Cera Pro';
-    src: url('../fonts/CeraPro-Regular.woff') format('woff');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Cera Pro';
-    src: url('../fonts/CeraPro-Medium.woff') format('woff');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'Cera Pro';
-    src: url('../fonts/CeraPro-Bold.woff') format('woff');
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Cera Pro';
-    src: url('../fonts/CeraPro-Black.woff') format('woff');
-    font-weight: 900;
-}
-
-body {
-    font-family: 'Cera Pro', sans-serif;
-}
-
 /*BUTTONS*/
 
 .login-button-green {
@@ -638,4 +628,165 @@ body {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+}
+
+/*PROMO CARDS SECTION*/
+
+.promo-cards {
+    padding-top: 94px;
+}
+
+.promo-cards .container {
+    display: flex;
+    gap: 28px;
+}
+
+.promo-card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #FBFBFB;
+    padding: 20px 30px;
+}
+
+.promo-card-image {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 210px;
+}
+
+.promo-card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.promo-card-content {
+    flex: 1;
+    text-align: right;
+}
+
+.promo-card-title {
+    font-size: 18px;
+    font-weight: 900;
+    color: #3D3D3D;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.promo-card-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.find-more-btn {
+    display: inline-block;
+    background-color: #46A358;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.find-more-btn span {
+    margin-left: 4px;
+}
+
+/*BLOG SECTION*/
+
+.blog-section {
+    padding: 94px 0 80px;
+    text-align: center;
+}
+
+.blog-section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #3D3D3D;
+    margin-bottom: 14px;
+}
+
+.blog-section-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+    margin-bottom: 35px;
+}
+
+.blog-grid {
+    display: flex;
+    gap: 28px;
+}
+
+.blog-card {
+    flex: 1;
+    background-color: #fff;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.blog-card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-card-body {
+    padding: 12px 15px 20px;
+    background-color: #FBFBFB;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card-meta {
+    font-size: 13px;
+    font-weight: 400;
+    color: #46A358;
+    margin-bottom: 8px;
+}
+
+.blog-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3D3D3D;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.blog-card-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.blog-read-more {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3D3D3D;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.blog-read-more.green {
+    color: #46A358;
 }
