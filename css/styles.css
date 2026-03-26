@@ -1,3 +1,4 @@
+﻿/* REGISTRATION FORM STYLES */
 
 body {
     background-color: white;
@@ -29,6 +30,7 @@ table {
     border-radius: 8px;
     position: relative;
 }
+
 td {
     padding: 40px;
 }
@@ -37,7 +39,7 @@ div {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-    
+
 #registerButton {
     background-color: #46A358;
     width: 100%;
@@ -69,7 +71,7 @@ div {
     font-weight: 400;
     color: #3D3D3D;
 }
-    
+
 input {
     width: 300px;
     height: 45px;
@@ -85,20 +87,24 @@ input {
 input::placeholder {
     color: #BDBDBD;
 }
+
 #registerTitle {
     color: #46A358;
 }
+
 .password-wrapper {
     position: relative;
     width: 300px;
     margin: 0 auto;
 }
+
 .password-wrapper input {
     width: 100%;
     padding: 10px;
     padding-right: 40px;
     box-sizing: border-box;
 }
+
 .eye-icon {
     position: absolute;
     right: 10px;
@@ -145,6 +151,8 @@ input::placeholder {
     background-color: #DEDEDE;
 }
 
+/*MODAL OVERLAY*/
+
 .modal-overlay {
     display: none;
     position: fixed;
@@ -178,16 +186,18 @@ input::placeholder {
     }
 }
 
-
+/*CATALOG SECTION*/
 
 .catalog {
     padding: 40px 0;
 }
 
 .catalog .container {
-    font-size: 0; 
+    font-size: 0;
     text-align: left;
 }
+
+/*SIDEBAR*/
 
 .catalog-sidebar {
     display: inline-block;
@@ -248,6 +258,8 @@ input::placeholder {
     display: block;
 }
 
+/*TOPBAR*/
+
 .catalog-topbar {
     display: flex;
     align-items: center;
@@ -293,6 +305,8 @@ input::placeholder {
     width: 12px;
     height: 12px;
 }
+
+/*PRODUCT GRID*/
 
 .catalog-grid {
     font-size: 0;
@@ -340,6 +354,8 @@ input::placeholder {
     color: #46A358;
 }
 
+/*PAGINATION*/
+
 .catalog-pagination {
     text-align: right;
     font-size: 0;
@@ -373,10 +389,9 @@ input::placeholder {
     vertical-align: middle;
 }
 
+/*GLOBAL & LAYOUT*/
 
-/*---------------------------------------------------*/
-
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -385,6 +400,8 @@ input::placeholder {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+/*HEADER*/
 
 .header {
     border-bottom: none;
@@ -397,7 +414,7 @@ input::placeholder {
     justify-content: space-between;
     gap: 20px;
     font-size: 0;
-    border-bottom: 0.3px solid #46A35880; 
+    border-bottom: 0.3px solid #46A35880;
     width: 100%;
     box-sizing: border-box;
     padding: 30px 20px 17px;
@@ -406,11 +423,11 @@ input::placeholder {
     position: relative;
 }
 
-.header-logo, 
-.header-nav, 
+.header-logo,
+.header-nav,
 .header-login {
- display: inline-block;
-    vertical-align: middle; 
+    display: inline-block;
+    vertical-align: middle;
     font-size: 16px;
     width: auto;
 }
@@ -450,17 +467,19 @@ input::placeholder {
 .nav-link.active::after {
     content: "";
     position: absolute;
-    bottom: -17px; 
+    bottom: -17px;
     left: 0;
     width: 100%;
     height: 3px;
     background-color: #46A358;
-    z-index: 10; 
+    z-index: 10;
 }
+
+/*BOTTOM BLOCK*/
 
 .bottom-block {
     background-color: #f8f8f8;
-    padding: 40px 0; 
+    padding: 40px 0;
 }
 
 .bottom-block-inner {
@@ -469,18 +488,20 @@ input::placeholder {
 }
 
 .bottom-block .container {
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 0 15px;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .bottom-block-content {
     text-align: left;
 }
+
+/*HERO SECTION*/
 
 .hero {
     background-color: #F5F5F580;
@@ -547,6 +568,8 @@ input::placeholder {
     object-fit: contain;
 }
 
+/*FONTS*/
+
 @font-face {
     font-family: 'Cera Pro';
     src: url('../fonts/CeraPro-Regular.woff') format('woff');
@@ -575,11 +598,13 @@ body {
     font-family: 'Cera Pro', sans-serif;
 }
 
+/*BUTTONS*/
+
 .login-button-green {
-      display: inline-flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px; 
+    gap: 8px;
     background-color: #46A358;
     color: white;
     border: none;
@@ -588,7 +613,7 @@ body {
     cursor: pointer;
     font-size: 14px;
     font-weight: 700;
-    text-align: center; 
+    text-align: center;
 }
 
 .login-button-green img {
@@ -601,7 +626,7 @@ body {
 }
 
 .shop-button-green {
-    display: inline-block; 
+    display: inline-block;
     background-color: #46A358;
     color: white;
     border: none;
@@ -610,9 +635,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
-    text-align: center; 
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
-
-/*---------------------------------------------------*/
