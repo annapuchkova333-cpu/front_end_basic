@@ -329,7 +329,105 @@
     </table> 
 </div>
 
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-info-cards">
+                <div class="footer-info-card">
+                    <div class="footer-info-icon">
+                        <span class="icon-circle"></span>
+                        <img src="img/cactus-1.svg" alt="Garden Care">
+                    </div>
+                    <h3 class="footer-info-title">Garden Care</h3>
+                    <p class="footer-info-text">We are an online plant shop<br>offering a wide range of cheap<br>and trendy plants.</p>
+                </div>
+                <div class="footer-info-card">
+                    <div class="footer-info-icon">
+                        <span class="icon-circle"></span>
+                        <img src="img/cactus-2.svg" alt="Plant Renovation">
+                    </div>
+                    <h3 class="footer-info-title">Plant Renovation</h3>
+                    <p class="footer-info-text">We are an online plant shop<br>offering a wide range of cheap<br>and trendy plants.</p>
+                </div>
+                <div class="footer-info-card">
+                    <div class="footer-info-icon">
+                        <span class="icon-circle"></span>
+                        <img src="img/cactus-3.svg" alt="Watering Garden">
+                    </div>
+                    <h3 class="footer-info-title">Watering Graden</h3>
+                    <p class="footer-info-text">We are an online plant shop<br>offering a wide range of cheap<br>and trendy plants.</p>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h3 class="footer-newsletter-title">Would you like to join newsletters?</h3>
+                <div class="footer-newsletter-form">
+                    <input type="email" class="footer-newsletter-input" placeholder="enter your email address...">
+                    <button class="footer-newsletter-btn">Join</button>
+                </div>
+                <p class="footer-newsletter-text">We usually post offers and challenges in newsletter. We're your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours!</p>
+            </div>
+        </div>
 
+        <div class="footer-gradient-bar">
+            <div class="footer-gradient-logo">
+                <img src="img/Logo.png" alt="GreenShop">
+            </div>
+            <div class="footer-gradient-item">
+                <img src="img/adress-icon.svg" alt="Address" class="footer-gradient-icon-img">
+                <span>70 West Buckingham Ave.<br>Farmingdale, NY 11735</span>
+            </div>
+            <div class="footer-gradient-item">
+                <img src="img/mail-icon.svg" alt="Email" class="footer-gradient-icon-img">
+                <a href="mailto:contact@greenshop.com" class="footer-gradient-link">contact@greenshop.com</a>
+            </div>
+            <div class="footer-gradient-item">
+                <img src="img/phone-icon.svg" alt="Phone" class="footer-gradient-icon-img">
+                <a href="tel:+880191171749" class="footer-gradient-link">+88 01911 717 490</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-column">
+                <h4 class="footer-column-title">My Account</h4>
+                <a href="#" class="footer-column-link">My Account</a>
+                <a href="#" class="footer-column-link">Our stores</a>
+                <a href="#" class="footer-column-link">Contact us</a>
+                <a href="#" class="footer-column-link">Career</a>
+                <a href="#" class="footer-column-link">Specials</a>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-column-title">Help & Guide</h4>
+                <a href="#" class="footer-column-link">Help Center</a>
+                <a href="#" class="footer-column-link">How to Buy</a>
+                <a href="#" class="footer-column-link">Shipping & Delivery</a>
+                <a href="#" class="footer-column-link">Product Policy</a>
+                <a href="#" class="footer-column-link">How to Return</a>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-column-title">Categories</h4>
+                <a href="#" class="footer-column-link">House Plants</a>
+                <a href="#" class="footer-column-link">Potter Plants</a>
+                <a href="#" class="footer-column-link">Seeds</a>
+                <a href="#" class="footer-column-link">Small Plants</a>
+                <a href="#" class="footer-column-link">Accessories</a>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-column-title">Social Media</h4>
+                <div class="footer-social-icons">
+                    <img src="img/social-media-icons.svg" alt="Social Media">
+                </div>
+                <h4 class="footer-column-title">We accept</h4>
+                <div class="footer-payment-icons">
+                    <img src="img/payment-icons.svg" alt="We accept">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            &copy; <span id="footerYear">2026</span> GreenShop. All Rights Reserved.
+        </div>
+    </div>
+</footer>
 
 <script>
     var loginBtn = document.querySelector('.login-button-green');
@@ -349,6 +447,8 @@
             overlay.classList.remove('active');
         }
     });
+
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
 </script>
 
 
