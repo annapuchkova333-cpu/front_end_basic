@@ -11,7 +11,7 @@
 <header class="header">
     <div class="header-container">
         <a href="/" class="header-logo">
-            <img src="img/Logo.png" alt="Greenshop Logo">
+            <img src="img/Logo.svg" alt="Greenshop Logo">
         </a>
         <nav class="header-nav">
             <a href="#" class="nav-link active">Home</a>
@@ -23,7 +23,7 @@
                     <a href="#" class="dropdown-item">Fungicides</a>
                     <a href="#" class="dropdown-item">Fertilizer</a>
                     <div class="dropdown-submenu-wrapper">
-                        <a href="#" class="dropdown-item dropdown-item-active">Priming <img src="img/left-vector.png" alt="arrow" class="dropdown-arrow"></a>
+                        <a href="#" class="dropdown-item dropdown-item-active">Priming <img src="img/left.svg" alt="arrow" class="dropdown-arrow"></a>
                         <div class="dropdown-submenu">
                             <a href="#" class="dropdown-item">Universal</a>
                             <a href="#" class="dropdown-item">For Ficus</a>
@@ -38,8 +38,15 @@
             <a href="#" class="nav-link">Blogs</a>
         </nav>
         <div class="header-login">
+            <a href="#" class="header-icon-link"><img src="img/search.svg" alt="Search"></a>
+            <div class="header-cart">
+                <a href="#" class="header-cart-link">
+                    <img src="img/shopping.svg" alt="Cart" id="headerCartIcon">
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+            </div>
             <button class="login-button-green">
-                    <img src="img/Logout.png" alt="Login">
+                    <img src="img/Logout-icon.svg" alt="Login">
                 Login
             </button>
         </div>
@@ -65,16 +72,36 @@
         <div class="catalog-sidebar">
             <h3 class="catalog-sidebar-title">Categories</h3>
             <ul class="catalog-categories">
-                <li><a href="#" class="category-link active">House Plants</a></li>
-                <li><a href="#" class="category-link">Potter Plants</a></li>
-                <li><a href="#" class="category-link">Seeds</a></li>
-                <li><a href="#" class="category-link">Small Plants</a></li>
-                <li><a href="#" class="category-link">Big Plants</a></li>
-                <li><a href="#" class="category-link">Succulents</a></li>
-                <li><a href="#" class="category-link">Terrariums</a></li>
-                <li><a href="#" class="category-link">Gardening</a></li>
-                <li><a href="#" class="category-link">Accessories</a></li>
+                <li><a href="#" class="category-link active">House Plants <span class="category-count">(33)</span></a></li>
+                <li><a href="#" class="category-link">Potter Plants <span class="category-count">(12)</span></a></li>
+                <li><a href="#" class="category-link">Seeds <span class="category-count">(65)</span></a></li>
+                <li><a href="#" class="category-link">Small Plants <span class="category-count">(39)</span></a></li>
+                <li><a href="#" class="category-link">Big Plants <span class="category-count">(23)</span></a></li>
+                <li><a href="#" class="category-link">Succulents <span class="category-count">(17)</span></a></li>
+                <li><a href="#" class="category-link">Trerrariums <span class="category-count">(19)</span></a></li>
+                <li><a href="#" class="category-link">Gardening <span class="category-count">(13)</span></a></li>
+                <li><a href="#" class="category-link">Accessories <span class="category-count">(18)</span></a></li>
             </ul>
+
+            <h3 class="catalog-sidebar-title">Price Range</h3>
+            <div class="price-range">
+                <div class="range-slider">
+                    <div class="range-track"></div>
+                    <div class="range-fill" id="rangeFill"></div>
+                    <input type="range" min="39" max="2000" value="39" class="range-input range-min" id="rangeMin">
+                    <input type="range" min="39" max="2000" value="1230" class="range-input range-max" id="rangeMax">
+                </div>
+                <p class="price-range-text">Price: <span class="price-green" id="priceMin">$39</span> – <span class="price-green" id="priceMax">$1230</span></p>
+                <button class="filter-button">Filter</button>
+            </div>
+
+            <h3 class="catalog-sidebar-title">Size</h3>
+            <ul class="catalog-categories size-categories">
+                <li><a href="#" class="category-link">Small <span class="category-count">(119)</span></a></li>
+                <li><a href="#" class="category-link">Medium <span class="category-count">(86)</span></a></li>
+                <li><a href="#" class="category-link">Large <span class="category-count">(78)</span></a></li>
+            </ul>
+
             <div class="catalog-banner">
                 <img src="img/super-sale-banner.png" alt="Super Sale UP TO 75% OFF">
             </div>
@@ -88,7 +115,7 @@
                 </div>
                 <div class="catalog-sort">
                     Short by: <span>Default sorting</span>
-                    <img src="img/down-vector.png" alt="arrow down" class="sort-arrow">
+                    <img src="img/down.svg" alt="arrow down" class="sort-arrow">
                 </div>
             </div>
             <div class="catalog-grid">
@@ -96,9 +123,9 @@
                     <div class="product-card-image">
                         <img src="img/product-1.png" alt="Barberton Daisy">
                         <div class="product-card-actions">
-                            <a href="#"><img src="img/shopping-1.png" alt="Cart"></a>
-                            <a href="#"><img src="img/heart-1.png" alt="Wishlist"></a>
-                            <a href="#"><img src="img/search-1.png" alt="Search"></a>
+                            <a href="#" class="cart-link"><img src="img/shopping.svg" alt="Cart"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Wishlist"></a>
+                            <a href="#"><img src="img/search.svg" alt="Search"></a>
                         </div>
                     </div>
                     <p class="product-card-name">Barberton Daisy</p>
@@ -108,9 +135,9 @@
                     <div class="product-card-image">
                         <img src="img/product-2.png" alt="Angel Wing Begonia">
                         <div class="product-card-actions">
-                            <a href="#"><img src="img/shopping-1.png" alt="Cart"></a>
-                            <a href="#"><img src="img/heart-1.png" alt="Wishlist"></a>
-                            <a href="#"><img src="img/search-1.png" alt="Search"></a>
+                            <a href="#" class="cart-link"><img src="img/shopping.svg" alt="Cart"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Wishlist"></a>
+                            <a href="#"><img src="img/search.svg" alt="Search"></a>
                         </div>
                     </div>
                     <p class="product-card-name">Angel Wing Begonia</p>
@@ -121,9 +148,9 @@
                         <span class="product-badge">13% OFF</span>
                         <img src="img/product-3.png" alt="African Violet">
                         <div class="product-card-actions">
-                            <a href="#"><img src="img/shopping-1.png" alt="Cart"></a>
-                            <a href="#"><img src="img/heart-1.png" alt="Wishlist"></a>
-                            <a href="#"><img src="img/search-1.png" alt="Search"></a>
+                            <a href="#" class="cart-link"><img src="img/shopping.svg" alt="Cart"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Wishlist"></a>
+                            <a href="#"><img src="img/search.svg" alt="Search"></a>
                         </div>
                     </div>
                     <p class="product-card-name">African Violet</p>
@@ -133,9 +160,9 @@
                     <div class="product-card-image">
                         <img src="img/product-4.png" alt="Beach Spider Lily">
                         <div class="product-card-actions">
-                            <a href="#"><img src="img/shopping-1.png" alt="Cart"></a>
-                            <a href="#"><img src="img/heart-1.png" alt="Wishlist"></a>
-                            <a href="#"><img src="img/search-1.png" alt="Search"></a>
+                            <a href="#" class="cart-link"><img src="img/shopping.svg" alt="Cart"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Wishlist"></a>
+                            <a href="#"><img src="img/search.svg" alt="Search"></a>
                         </div>
                     </div>
                     <p class="product-card-name">Beach Spider Lily</p>
@@ -145,9 +172,9 @@
                     <div class="product-card-image">
                         <img src="img/product-5.png" alt="Blushing Bromeliad">
                         <div class="product-card-actions">
-                            <a href="#"><img src="img/shopping-1.png" alt="Cart"></a>
-                            <a href="#"><img src="img/heart-1.png" alt="Wishlist"></a>
-                            <a href="#"><img src="img/search-1.png" alt="Search"></a>
+                            <a href="#" class="cart-link"><img src="img/shopping.svg" alt="Cart"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Wishlist"></a>
+                            <a href="#"><img src="img/search.svg" alt="Search"></a>
                         </div>
                     </div>
                     <p class="product-card-name">Blushing Bromeliad</p>
@@ -157,9 +184,9 @@
                     <div class="product-card-image">
                         <img src="img/product-6.png" alt="Aluminum Plant">
                         <div class="product-card-actions">
-                            <a href="#"><img src="img/shopping-1.png" alt="Cart"></a>
-                            <a href="#"><img src="img/heart-1.png" alt="Wishlist"></a>
-                            <a href="#"><img src="img/search-1.png" alt="Search"></a>
+                            <a href="#" class="cart-link"><img src="img/shopping.svg" alt="Cart"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Wishlist"></a>
+                            <a href="#"><img src="img/search.svg" alt="Search"></a>
                         </div>
                     </div>
                     <p class="product-card-name">Aluminum Plant</p>
@@ -169,9 +196,9 @@
                     <div class="product-card-image">
                         <img src="img/product-7.png" alt="Bird's Nest Fern">
                         <div class="product-card-actions">
-                            <a href="#"><img src="img/shopping-1.png" alt="Cart"></a>
-                            <a href="#"><img src="img/heart-1.png" alt="Wishlist"></a>
-                            <a href="#"><img src="img/search-1.png" alt="Search"></a>
+                            <a href="#" class="cart-link"><img src="img/shopping.svg" alt="Cart"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Wishlist"></a>
+                            <a href="#"><img src="img/search.svg" alt="Search"></a>
                         </div>
                     </div>
                     <p class="product-card-name">Bird's Nest Fern</p>
@@ -181,9 +208,9 @@
                     <div class="product-card-image">
                         <img src="img/product-8.png" alt="Broadleaf Lady Palm">
                         <div class="product-card-actions">
-                            <a href="#"><img src="img/shopping-1.png" alt="Cart"></a>
-                            <a href="#"><img src="img/heart-1.png" alt="Wishlist"></a>
-                            <a href="#"><img src="img/search-1.png" alt="Search"></a>
+                            <a href="#" class="cart-link"><img src="img/shopping.svg" alt="Cart"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Wishlist"></a>
+                            <a href="#"><img src="img/search.svg" alt="Search"></a>
                         </div>
                     </div>
                     <p class="product-card-name">Broadleaf Lady Palm</p>
@@ -193,9 +220,9 @@
                     <div class="product-card-image">
                         <img src="img/product-9.png" alt="Chinese Evergreen">
                         <div class="product-card-actions">
-                            <a href="#"><img src="img/shopping-1.png" alt="Cart"></a>
-                            <a href="#"><img src="img/heart-1.png" alt="Wishlist"></a>
-                            <a href="#"><img src="img/search-1.png" alt="Search"></a>
+                            <a href="#" class="cart-link"><img src="img/shopping.svg" alt="Cart"></a>
+                            <a href="#"><img src="img/heart.svg" alt="Wishlist"></a>
+                            <a href="#"><img src="img/search.svg" alt="Search"></a>
                         </div>
                     </div>
                     <p class="product-card-name">Chinese Evergreen</p>
@@ -207,7 +234,7 @@
                 <a href="#" class="pagination-link">2</a>
                 <a href="#" class="pagination-link">3</a>
                 <a href="#" class="pagination-link">4</a>
-                <a href="#" class="pagination-link"><img src="img/right-vector.png" alt="Next" class="pagination-arrow"></a>
+                <a href="#" class="pagination-link"><img src="img/right.svg" alt="Next" class="pagination-arrow"></a>
             </div>
         </div>
     </div>
@@ -295,7 +322,7 @@
     <table>
         <tr> <td>
             <button class="close-btn" type="button" id="modalClose">
-                <img src="img/close-vector.png" alt="Close">
+                <img src="img/close.svg" alt="Close">
             </button>
             <h1>Login | <span id="registerTitle">Register</span></h1>
                 <h4>Enter your email and password to register</h4>
@@ -307,7 +334,7 @@
             </div>
             <div class="password-wrapper">
                 <input type="password" placeholder="Password">
-                <span class="eye-icon"> <img src="img/Hide.png" alt="eye-icon" width="20" height="20"></span>
+                <span class="eye-icon"> <img src="img/hide.svg" alt="eye-icon" width="20" height="20"></span>
             </div>
             <div>
                 <input type="password" placeholder="Confirm Password">
@@ -316,12 +343,12 @@
                 <div class="divider"><span>Or register with</span></div> 
                 <div> 
                     <button type="button" class="register-form-button">
-                        <img src="img/google-logo.jpg" alt="Google Logo" width="20" height="20">
+                        <img src="img/google.svg" alt="Google Logo" width="20" height="20">
                         Continue with Google</button>
                 </div> 
                 <div> 
                     <button type="button" class="register-form-button">
-                        <img src="img/facebook-logo_1080029-107.avif" alt="Facebook Logo" width="20" height="20">
+                        <img src="img/facebook.svg" alt="Facebook Logo" width="20" height="20">
                         Continue with Facebook</button>
                 </div> 
             </td> 
@@ -370,7 +397,7 @@
 
         <div class="footer-gradient-bar">
             <div class="footer-gradient-logo">
-                <img src="img/Logo.png" alt="GreenShop">
+                <img src="img/Logo.svg" alt="GreenShop">
             </div>
             <div class="footer-gradient-item">
                 <img src="img/adress-icon.svg" alt="Address" class="footer-gradient-icon-img">
@@ -449,6 +476,49 @@
     });
 
     document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+    var cartCount = 0;
+    var cartBadge = document.getElementById('cartBadge');
+    var cartLinks = document.querySelectorAll('.cart-link');
+
+    cartLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            cartCount++;
+            cartBadge.textContent = cartCount;
+            cartBadge.classList.add('active');
+        });
+    });
+
+    var rangeMin = document.getElementById('rangeMin');
+    var rangeMax = document.getElementById('rangeMax');
+    var rangeFill = document.getElementById('rangeFill');
+    var priceMin = document.getElementById('priceMin');
+    var priceMax = document.getElementById('priceMax');
+
+    function updateRange() {
+        var minVal = parseInt(rangeMin.value);
+        var maxVal = parseInt(rangeMax.value);
+
+        if (minVal > maxVal) {
+            var temp = minVal;
+            minVal = maxVal;
+            maxVal = temp;
+        }
+
+        priceMin.textContent = '$' + minVal;
+        priceMax.textContent = '$' + maxVal;
+
+        var minPercent = ((minVal - 39) / (2000 - 39)) * 100;
+        var maxPercent = ((maxVal - 39) / (2000 - 39)) * 100;
+
+        rangeFill.style.left = minPercent + '%';
+        rangeFill.style.width = (maxPercent - minPercent) + '%';
+    }
+
+    rangeMin.addEventListener('input', updateRange);
+    rangeMax.addEventListener('input', updateRange);
+    updateRange();
 </script>
 
 

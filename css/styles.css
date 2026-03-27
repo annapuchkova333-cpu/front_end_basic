@@ -266,11 +266,161 @@ input::placeholder {
     color: #3D3D3D;
     font-size: 15px;
     font-weight: 400;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.category-link:hover {
+    color: #46A358;
 }
 
 .category-link.active {
     color: #46A358;
     font-weight: 700;
+}
+
+.catalog-categories li {
+    display: flex;
+}
+
+.category-count {
+    font-weight: 400;
+}
+
+/* PRICE RANGE */
+
+.price-range {
+    padding: 0 15px 30px;
+}
+
+.range-slider {
+    position: relative;
+    height: 20px;
+    margin: 20px 0 16px;
+}
+
+.range-track {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #E0E0E0;
+    border-radius: 3px;
+}
+
+.range-fill {
+    position: absolute;
+    top: -6px;
+    height: 6px;
+    background-color: #46A358;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.range-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    z-index: 2;
+}
+
+.range-input::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.range-input::-moz-range-track {
+    width: 100%;
+    height: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.range-input::-ms-track {
+    width: 100%;
+    height: 0;
+    background: transparent;
+    border: none;
+    color: transparent;
+}
+
+.range-input::-ms-fill-lower,
+.range-input::-ms-fill-upper {
+    background: transparent;
+}
+
+.range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #46A358;
+    border: 2px solid #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    pointer-events: all;
+    margin-top: 0;
+}
+
+.range-input::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #46A358;
+    border: 2px solid #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.price-range-text {
+    font-size: 15px;
+    color: #3D3D3D;
+    font-weight: 400;
+    margin: 0 0 12px 0;
+}
+
+.price-green {
+    color: #46A358;
+    font-weight: 700;
+}
+
+.filter-button {
+    background-color: #46A358;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* SIZE */
+
+.size-categories {
+    margin-bottom: 30px;
 }
 
 .catalog-banner {
@@ -307,6 +457,12 @@ input::placeholder {
     font-weight: 400;
     padding-bottom: 8px;
     border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    cursor: pointer;
+}
+
+.catalog-tab:hover {
+    color: #46A358;
 }
 
 .catalog-tab.active {
@@ -405,6 +561,15 @@ input::placeholder {
     height: 35px;
     background-color: #fff;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.product-card-actions a:hover {
+    background-color: #46A358;
+}
+
+.product-card-actions a:hover img {
+    filter: brightness(0) invert(1);
 }
 
 .product-card-actions a img {
@@ -534,6 +699,53 @@ input::placeholder {
 .header-login {
     flex-shrink: 0;
     justify-content: flex-end;
+    gap: 30px;
+}
+
+.header-icon-link {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.header-cart {
+    position: relative;
+}
+
+.header-cart-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-cart-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: #46A358;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.cart-badge.active {
+    display: flex;
 }
 
 .nav-link {
@@ -718,6 +930,9 @@ input::placeholder {
 .hero_content {
     flex: 1;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .hero_label {
@@ -802,6 +1017,7 @@ input::placeholder {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    align-self: flex-start;
 }
 
 /*PROMO CARDS SECTION*/
