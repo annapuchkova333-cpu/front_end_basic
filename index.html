@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<div class="preloader" id="preloader">
+    <img src="img/preloader-flower.svg" alt="Loading" class="preloader-icon">
+</div>
 <header class="header">
     <div class="header-container">
         <a href="/" class="header-logo">
@@ -339,6 +342,11 @@
             <div>
                 <input type="password" placeholder="Confirm Password">
             </div>
+                <label class="checkbox-terms">
+                    <input type="checkbox" class="checkbox-hidden">
+                    <span class="checkbox-custom"><img src="img/approved.svg" alt="check" class="checkbox-icon"></span>
+                    <span class="checkbox-text">I agree to the terms and conditions</span>
+                </label>
                 <button type="submit" id="registerButton">Register</button>
                 <div class="divider"><span>Or register with</span></div> 
                 <div> 
@@ -519,6 +527,10 @@
     rangeMin.addEventListener('input', updateRange);
     rangeMax.addEventListener('input', updateRange);
     updateRange();
+
+    setTimeout(function() {
+        document.getElementById('preloader').classList.add('hidden');
+    }, 3000);
 </script>
 
 
